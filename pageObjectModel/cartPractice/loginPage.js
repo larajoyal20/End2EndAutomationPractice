@@ -15,7 +15,7 @@ class LoginPage{
         await this.password.fill(password)
         await this.signInButton.click()
         await expect(this.homebtn).toBeVisible();
-        await this.page.screenshot({path:"ScreenPom.png"})
+        await this.page.screenshot({path:"./screenshots/ScreenPom.png"})
     }
 
 }
