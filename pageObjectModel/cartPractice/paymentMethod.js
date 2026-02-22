@@ -17,7 +17,7 @@ class PaymentMethod{
         await this.page.locator(".ta-item", { hasText: new RegExp(`^\\s*${country}\\s*$`) }).click();
         await this.page.locator(".action__submit").waitFor()
         await this.page.locator(".action__submit").click()
-        await this.page.screenshot({path:"orderPlaced.png"})
+        await this.page.screenshot({path:"./screenshots/orderPlaced.png"})
 
     }
     async orderConfrimation(){
